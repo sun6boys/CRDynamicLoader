@@ -1,0 +1,7 @@
+CRDynamicLoader.xcodeproj/xcuserdata/
+CRDynamicLoader.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+CRDynamicLoader.xcodeproj/project.xcworkspace/xcuserdata/
