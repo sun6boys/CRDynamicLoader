@@ -53,10 +53,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "CasaTaloyum" => "casatwy@msn.com" }
-  # Or just: s.author    = "CasaTaloyum"
-  # s.authors            = { "CasaTaloyum" => "casatwy@msn.com" }
-  # s.social_media_url   = "http://twitter.com/CasaTaloyum"
+  s.author             = { "Charon" => "sun6boys@126.com" }
+  # Or just: s.author    = "Charon"
+  # s.authors            = { "Charon" => "sun6boys@126.com" }
+  # s.social_media_url   = "http://charonchu.club"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -133,7 +133,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "BLNetworking"
-  # s.dependency "BLBusinessCategoryLogin"
 
 end
