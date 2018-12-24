@@ -12,7 +12,6 @@
 #include <mach-o/dyld.h>
 #include <dlfcn.h>
 
-typedef void (*CRDynamicLoaderInjectFunction)(void);
 
 static void CRDynamicLoader_invoke_method(void *key){
     Dl_info info;

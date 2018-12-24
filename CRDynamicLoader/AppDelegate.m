@@ -25,7 +25,7 @@ extern char * LEVEL_C;
     [self launchForKey:LEVEL_A];
     
     [self launchForKey:LEVEL_B];
-    [self launchForKey:LEVEL_B];
+    [self launchForKey:LEVEL_C];
     return YES;
 }
 
