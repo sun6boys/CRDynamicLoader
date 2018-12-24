@@ -22,18 +22,28 @@ extern char * LEVEL_C;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [self launchForKey:LEVEL_A];
+    [self launchLevelA];
     
-    [self launchForKey:LEVEL_B];
-    [self launchForKey:LEVEL_C];
+    [self performSelector:@selector(launchLevelB) withObject:nil afterDelay:2.f];
+    [self performSelector:@selector(launchLevelC) withObject:nil afterDelay:4.5f];
+    
     return YES;
 }
 
-- (void)launchForKey:(char *)key
+- (void)launchLevelA
 {
-    [CRDynamicLoader executeFunctionsForKey:key];
+    [CRDynamicLoader executeFunctionsForKey:LEVEL_A];
 }
 
+- (void)launchLevelB
+{
+    [CRDynamicLoader executeFunctionsForKey:LEVEL_B];
+}
+
+- (void)launchLevelC
+{
+    [CRDynamicLoader executeFunctionsForKey:LEVEL_C];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

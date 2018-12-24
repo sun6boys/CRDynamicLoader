@@ -18,7 +18,7 @@ static void CRDYML_INJECT_##KEY##_FUNCTION(void){
 
 #define CRDYML_FUNCTIONS_EXPORT_END(KEY) \
 } \
-static CRDynamicLoaderInjectFunction dymlLoader##KEY##Var CRDYML_ATTRIBUTE(KEY) = CRDYML_INJECT_##KEY##_FUNCTION;
+static CRDynamicLoaderInjectFunction dymlLoader##KEY##function CRDYML_ATTRIBUTE(KEY) = CRDYML_INJECT_##KEY##_FUNCTION;
 
 @interface CRDynamicLoader : NSObject
 
